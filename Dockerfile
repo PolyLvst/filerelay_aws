@@ -4,4 +4,4 @@ RUN pip install --no-cache-dir --upgrade -r /filerelay_aws-be/requirements.txt
 COPY . ./filerelay_aws-be
 WORKDIR /filerelay_aws-be
 EXPOSE 8000
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0," "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
