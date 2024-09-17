@@ -1,0 +1,9 @@
+services:
+  filerelay_aws-be:
+    restart: unless-stopped
+    build: .
+    container_name: filerelay_aws-be
+    ports:
+      - "8000:8000"
+    volumes:
+      - ~/.aws/credentials:/home/filerelay_aws-be/.aws/credentials:ro
