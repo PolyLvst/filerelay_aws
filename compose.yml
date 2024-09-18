@@ -6,4 +6,4 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ~/.aws/credentials:/home/filerelay_aws-be/.aws/credentials:ro
+      - ~/.aws:/root/.aws:ro
